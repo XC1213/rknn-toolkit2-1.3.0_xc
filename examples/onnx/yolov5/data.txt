@@ -1,0 +1,10 @@
+regnet:  
+	outputs=['809', '861', '913']
+swin-transform:
+	outputs=['1802', '1854', '1906'] # not sure
+yolov5s:
+        outputs=['378', '439', '500']
+yolov5s_量化：
+	output=outputs=['onnx::Reshape_328_DequantizeLinear_Output', 'onnx::Reshape_342_DequantizeLinear_Output', 'onnx::Reshape_356_DequantizeLinear_Output']
+swin-transform-quant:
+	outputs=['onnx::Shape_1863', 'onnx::Shape_1883_DequantizeLinear_Output', 'onnx::Shape_1903_DequantizeLinear_Output']
